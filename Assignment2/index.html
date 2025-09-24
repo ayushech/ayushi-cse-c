@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bus Seat Booking - Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.S4yszYcjUjjuM0EWSJHGQAAAAA?w=352&h=254&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Logo" class="logo">
+    <h2>Bus Seat Book</h2>
+  </div>
+
+  <h1> Welcome to Bus Booking System</h1>
+
+  <form action="seatbooking.html" method="GET">
+    <label>User Name:</label><br>
+    <input type="text" name="username" required><br><br>
+
+    <label>Password:</label><br>
+    <input type="password" name="password" required><br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female <br><br>
+
+    <label>Select City:</label><br>
+    <select name="city">
+      <option>Delhi</option>
+      <option>Mumbai</option>
+      <option>Bangalore</option>
+      <option>Hyderabad</option>
+    </select><br><br>
+
+    <button type="submit">Book Seat</button>
+  </form>
+</body>
+</html>
