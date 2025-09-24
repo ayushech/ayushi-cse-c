@@ -1,0 +1,13 @@
+span{
+    color: cadetblue;
+}
+
+.box{
+    border: 0.5rem #fff solid;
+    width: 300px;
+    height: 250px;
+    color: bisque;
+    border-radius: 0.15rem;
+    margin: 1rem;
+    padding: 2rem;
+}
