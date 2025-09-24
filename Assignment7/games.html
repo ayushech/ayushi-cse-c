@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Games</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 15px;
+      width: 250px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .card p {
+      margin: 10px 0;
+    }
+    .card h2 {
+      margin: 10px 0;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <main id="mainContainer"></main>
+
+  <script>
+    const games = {
+      game1: {
+        name: "The Legend of Zelda: Tears of the Kingdom",
+        img: "https://imgs.search.brave.com/nQ1n4QiSFK6jCg9k6ZWP8bTq5gy86XOdEtdUDniV-2c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2RhLzky/LzE2L2RhOTIxNjZm/ZjE4OTA3OGUwNmM2/NDhlZTlkOGM5OTVl/LmpwZw",
+        desc: "Action-adventure, Nintendo Switch, open-world exploration and crafting"
+      },
+      game2: {
+        name: "Elden Ring",
+        img: "https://imgs.search.brave.com/nQ1n4QiSFK6jCg9k6ZWP8bTq5gy86XOdEtdUDniV-2c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2RhLzky/LzE2L2RhOTIxNjZm/ZjE4OTA3OGUwNmM2/NDhlZTlkOGM5OTVl/LmpwZw",
+        desc: "Open-world RPG, FromSoftware, combat and exploration with co-op"
+      },
+      game3: {
+        name: "God of War Ragnarök",
+        img: "https://imgs.search.brave.com/nQ1n4QiSFK6jCg9k6ZWP8bTq5gy86XOdEtdUDniV-2c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2RhLzky/LzE2L2RhOTIxNjZm/ZjE4OTA3OGUwNmM2/NDhlZTlkOGM5OTVl/LmpwZw",
+        desc: "Action-adventure, PlayStation exclusive, epic story of Kratos and Atreus"
+      }
+    };
+
+    const container = document.getElementById("mainContainer");
+
+    Object.values(games).forEach(game => {
+      const card = document.createElement("div");
+      card.className = "card";
+
+      card.innerHTML = `
+        <img src="${game.img}" alt="${game.name}">
+        <h2>${game.name}</h2>
+        <p>${game.desc}</p>
+      `;
+
+      container.appendChild(card);
+    });
+  </script>
+</body>
+</html>

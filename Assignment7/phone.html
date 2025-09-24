@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+</head>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 15px;
+      width: 250px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .card p {
+      margin: 10px 0;
+    }
+    .card h3 {
+      margin: 10px 0;
+      color: #333;
+    }
+</style>
+<body>
+    <main id="mainContainer">
+
+    </main>
+    <script>
+        const phones = {
+            phone1: {
+                name: "iPhone 14 Pro",
+                img: "https://imgs.search.brave.com/57zsstKWRuLfzm-yhHvZDvWxbqZSQJ7TIUecRspqqoU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMucGV4ZWxzLmNv/bS9waG90b3MvMzk5/OTUzNi9wZXhlbHMt/cGhvdG8tMzk5OTUz/Ni5qcGVnP2F1dG89/Y29tcHJlc3MmY3M9/dGlueXNyZ2ImZHBy/PTEmdz01MDA",
+                desc: "6.1-inch display, A16 Bionic chip, Pro camera system with 48MP main sensor, Always-On display, Dynamic Island, iOS 16"
+            },
+            phone2: {
+                name: "Samsung Galaxy S23 Ultra",
+                img: "https://imgs.search.brave.com/57zsstKWRuLfzm-yhHvZDvWxbqZSQJ7TIUecRspqqoU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMucGV4ZWxzLmNv/bS9waG90b3MvMzk5/OTUzNi9wZXhlbHMt/cGhvdG8tMzk5OTUz/Ni5qcGVnP2F1dG89/Y29tcHJlc3MmY3M9/dGlueXNyZ2ImZHBy/PTEmdz01MDA",
+                desc: "6.8-inch display, Snapdragon 8 Gen 2, Quad camera system with 200MP main sensor, S Pen support, Android 13"
+            },
+            phone3: {
+                name: "Google Pixel 7 Pro",
+                img: "https://imgs.search.brave.com/57zsstKWRuLfzm-yhHvZDvWxbqZSQJ7TIUecRspqqoU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMucGV4ZWxzLmNv/bS9waG90b3MvMzk5/OTUzNi9wZXhlbHMt/cGhvdG8tMzk5OTUz/Ni5qcGVnP2F1dG89/Y29tcHJlc3MmY3M9/dGlueXNyZ2ImZHBy/PTEmdz01MDA",
+                desc: "6.7-inch display, Google Tensor G2 chip, Triple camera system with 50MP main sensor, Android 13"
+            }
+        }
+
+        const container = document.getElementById("mainContainer");
+
+        Object.values(phones).forEach(phone => {
+            const card = document.createElement("div")
+            card.className = "card";
+
+            card.innerHTML = `
+            <img src="${phone.img}" alt="">
+            <h2>${phone.name}</h2>
+            <p>${phone.desc}</p>
+            `
+        container.appendChild(card);
+
+        });
+    </script>
+</body>
+</html>

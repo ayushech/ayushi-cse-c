@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Televisions</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 15px;
+      width: 250px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .card p {
+      margin: 10px 0;
+    }
+    .card h2 {
+      margin: 10px 0;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <main id="mainContainer"></main>
+
+  <script>
+    const tvs = {
+      tv1: {
+        name: "LG OLED C3",
+        img: "https://imgs.search.brave.com/CeYh7cCQvzBBXyoVvbhuzIwOupTNfCC22pyz-AZP9IQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9tb2Rlcm4tbGl2/aW5nLXJvb20td2l0/aC13YWxsbW91bnRl/ZC10dl84MzI1MTAt/MTg5OTUuanBnP3Nl/bXQ9YWlzX2h5YnJp/ZCZ3PTc0MCZxPTgw",
+        desc: "55-inch 4K OLED, Dolby Vision, HDR10, Dolby Atmos, webOS Smart TV"
+      },
+      tv2: {
+        name: "Samsung Neo QLED QN90C",
+        img: "https://imgs.search.brave.com/CeYh7cCQvzBBXyoVvbhuzIwOupTNfCC22pyz-AZP9IQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9tb2Rlcm4tbGl2/aW5nLXJvb20td2l0/aC13YWxsbW91bnRl/ZC10dl84MzI1MTAt/MTg5OTUuanBnP3Nl/bXQ9YWlzX2h5YnJp/ZCZ3PTc0MCZxPTgw",
+        desc: "65-inch 4K QLED, Quantum HDR, Neural Quantum Processor 4K, Tizen OS"
+      },
+      tv3: {
+        name: "Sony Bravia XR A80L",
+        img: "https://imgs.search.brave.com/CeYh7cCQvzBBXyoVvbhuzIwOupTNfCC22pyz-AZP9IQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9tb2Rlcm4tbGl2/aW5nLXJvb20td2l0/aC13YWxsbW91bnRl/ZC10dl84MzI1MTAt/MTg5OTUuanBnP3Nl/bXQ9YWlzX2h5YnJp/ZCZ3PTc0MCZxPTgw",
+        desc: "77-inch 4K OLED, Cognitive Processor XR, Dolby Vision, Google TV"
+      }
+    };
+
+    const container = document.getElementById("mainContainer");
+
+    Object.values(tvs).forEach(tv => {
+      const card = document.createElement("div");
+      card.className = "card";
+
+      card.innerHTML = `
+        <img src="${tv.img}" alt="${tv.name}">
+        <h2>${tv.name}</h2>
+        <p>${tv.desc}</p>
+      `;
+
+      container.appendChild(card);
+    });
+  </script>
+</body>
+</html>
