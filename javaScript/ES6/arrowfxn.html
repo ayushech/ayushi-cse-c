@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="adi">Subjects: </p>
+    <script>
+        const sayHello = () => {
+            console.log("Hello, World!");
+        }
+        sayHello();
+
+        const addSubjects = () => {
+            return "Maths, Science, English";
+        }
+
+        document.getElementById("adi").innerHTML += addSubjects();
+
+        let multiply = (a, b) => a * b; // single line function
+
+    </script>
+</body>
+</html>

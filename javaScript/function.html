@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #adi{
+            background-color: cornflowerblue;
+            border: 2rem solid cornflowerblue;
+            max-width: 200px;
+        }
+        button{
+            border-radius: 0.25rem;
+            padding: 1rem 2rem;
+            background-color: white;
+            color: goldenrod;
+            font-weight: 600;
+        } */
+
+
+    </style>
+</head>
+<body id="main">
+    <!-- <div id="adi">
+        <button onclick="ad()">Click</button>
+    </div>
+    <h1 id="para"></h1> -->
+
+    <button onclick="red()">Red</button>
+    <button onclick="green()">Green</button>
+    <button onclick="blue()">Blue</button>
+
+    <button onclick="change()">Change</button>
+
+    <script>
+
+        function red(){
+            document.getElementById("main").style.backgroundColor="red"
+        }
+        function green(){
+            document.getElementById("main").style.backgroundColor="green"
+        }
+        function blue(){
+            document.getElementById("main").style.backgroundColor="blue"
+        }
+        const val = 1;
+        function change(){
+            while(val){
+                document.getElementById("main").style.backgroundColor="red"
+                document.getElementById("main").style.backgroundColor="green"
+                document.getElementById("main").style.backgroundColor="blue"
+            }
+        }
+
+
+
+        /* function abes() {
+           document.write("We are student of ABES Engineering College");
+        }
+        abes(
+        function calc(a,b) {
+            document.write(" Sum ="+ a+b)
+            document.write(" Difference ="+ a-b)
+            document.write(" Mul ="+ a*b)
+            document.write(" Divide ="+ a/b)
+        
+        calc(10,4); */
+
+        // function ad(){
+        //     document.getElementById("para").innerHTML="Hello i'm here!";
+        // }
+
+    </script>
+</body>
+</html>
