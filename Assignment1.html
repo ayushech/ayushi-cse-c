@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABES ES</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      color: #333;
+    }
+
+    nav {
+      background: linear-gradient(to right, #4e54c8, #8f94fb);
+      height: 60px;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 25px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .welcome {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 26px;
+      font-weight: bold;
+      color: #4e54c8;
+    }
+
+    .content {
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .content img {
+      width: 200px;
+      height: 150px;
+      margin-right: 20px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .students {
+      text-align: center;
+      margin: 40px 0 20px;
+    }
+
+    .students h2 {
+      color: #4e54c8;
+      margin-bottom: 20px;
+    }
+
+    .student-list {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .student {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      padding: 12px 16px;
+      border-radius: 12px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      width: 280px;
+      transition: transform 0.2s;
+    }
+
+    .student:hover {
+      transform: translateY(-5px);
+    }
+
+    .student img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 15px;
+      border: 3px solid #8f94fb;
+    }
+
+    .student p {
+      margin: 0;
+      text-align: left;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .student p strong {
+      font-size: 15px;
+      color: #4e54c8;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Class</a>
+  </nav>
+
+  <div class="welcome">Welcome ABES ES</div>
+
+  <div class="content">
+    <img src="https://i.ytimg.com/vi/vGoiqOA6O2g/maxresdefault.jpg" alt="Campus Image">
+    <div>
+      <p>
+        ABES Engineering College is committed to excellence in education, 
+        research, and student development. Our students actively participate 
+        in cultural, academic, and technical activities to prepare for future challenges.
+      </p>
+    </div>
+  </div>
+
+  <div class="students">
+    <h2>Out Placed Students</h2>
+    <div class="student-list">
+      <div class="student">
+        <img src="https://th.bing.com/th/id/OIP.Sgb5hbDugN-kFIXxkKqhJgHaE8?pid=ImgDet&w=300&h=200&c=7" alt="Student 1">
+        <p><strong>Rohit Sharma</strong><br>Software Engineer<br>Google</p>
+      </div>
+      <div class="student">
+        <img src="https://c8.alamy.com/comp/HTC3WJ/happy-asian-elementary-school-student-studying-in-classroom-looking-HTC3WJ.jpg" alt="Student 2">
+        <p><strong>Neha Gupta</strong><br>Data Analyst<br>Microsoft</p>
+      </div>
+      <div class="student">
+        <img src="https://c8.alamy.com/comp/HTC3WJ/happy-asian-elementary-school-student-studying-in-classroom-looking-HTC3WJ.jpg" alt="Student 3">
+        <p><strong>Amit Verma</strong><br>Web Developer<br>Infosys</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
