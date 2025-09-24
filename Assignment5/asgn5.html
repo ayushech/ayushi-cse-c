@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doc</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            border: 1rem solid red;
+            max-width: 500px;
+            padding: 1.5rem 2.5rem;
+            border-radius: 2rem;
+
+        }
+        .top{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            gap: 2rem;
+        }
+        img{
+            width: 3rem;
+            border-radius: 50%;
+        }
+        p{
+            font-weight: 900;
+            font-family: cursive;
+            font-size: 2rem;
+        }
+        .buttons{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+        }
+        button{
+            padding: 1rem 2rem;
+            background-color: aquamarine;
+            color: crimson;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="top">
+            <img src="mcdonald-s-15-logo-svgrepo-com.svg" alt="">
+            <p>Counter App</p>
+        </div>
+        <center>
+            <p id="countVal">0</p>
+        </center>
+        <div class="buttons">
+            <button onclick="inc()">+</button>
+            <button onclick="dec()">-</button>
+        </div>
+    </div>
+    <script>
+
+        let counter = 0;
+
+        function inc(){
+
+            if(counter==10){
+                alert("max limit reached");
+                document.getElementById("countVal").innerHTML = counter;
+            }else{
+                document.getElementById("countVal").innerHTML = ++counter;
+            }
+
+        }
+        function dec(){
+
+            if(counter==0){
+                alert("min limit reached");
+            }else{
+                document.getElementById("countVal").innerHTML = --counter;
+            }
+        }
+
+    </script>
+</body>
+</html>
