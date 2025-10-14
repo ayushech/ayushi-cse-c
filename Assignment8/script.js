@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const taskList = document.getElementById('task-list');
     
     
-    const initialTasks = ["Play", "go to market", "go to college"];
+   
 
    
     function addTask(taskText) {
